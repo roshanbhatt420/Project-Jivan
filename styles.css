@@ -1,0 +1,209 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 1rem 0;
+    border-radius: 2rem;
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+header nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        background-color: #fefefe;
+        border-radius: 2rem;
+        padding: 0.5rem 1rem;
+
+    }
+  header nav ul li a:hover {
+    color: #000000;
+    background-color: #bddbe9;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+
+  }
+  
+  header .mobile-menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #c0392b;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .nav-links.active li {
+    margin: 1rem 0;
+  }
+  .hero {
+    background: url('human.jpg') no-repeat center center/cover;
+    color: #1c134b;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  .overview,.news-blogs,.famous-stories {
+    padding: 2rem 0;
+  }
+  .famous-stories,.news-blogs,.overview {
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    color: #000000;
+    padding: 5rem 0;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: rgb(194, 211, 205);
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    padding: 0 1rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero .btn {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .hero .btn:hover {
+    background-color: #c0392b;
+  }
+  main {
+    padding: 2rem 0;
+    border-radius: 2rem;
+  }
+  
+  .overview,.news-blogs,.famous-stories {
+    padding: 2rem 0;
+  }
+  
+  .overview h2, .news-blogs h2, .famous-stories h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .news-blogs .blog-preview, .famous-stories .story {
+    margin-bottom: 1rem;
+  }
+  
+  .news-blogs .blog-preview h3, .famous-stories .story h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  footer {
+    background-color:#c0392b;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 2rem;
+  }
+  
+  footer .quick-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  footer .contact-info {
+    margin-bottom: 1rem;
+  }
+  
+  footer .social-media a img {
+    width: 24px;
+    margin: 0 5px;
+  }
+  @media (max-width: 768px) {
+    header .mobile-menu-icon {
+      display: block;
+    }
+  
+    header nav ul {
+      display: none;
+      flex-direction: column;
+        width: 100%;
+        border-radius: 4rem;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .hero .btn {
+      padding: 0.5rem 1.5rem;
+      font-size: 0.875rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero p {
+      font-size: 0.875rem;
+    }
+  
+    .hero .btn {
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem;
+    }
+  }
+  
